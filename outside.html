@@ -68,7 +68,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="" href="clear.md">Removing old Tools</a>
+                    <li class="toctree-l1"><a class="reference internal" href="clear.html">Removing old Tools</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Further Information</span></p>
@@ -118,8 +118,10 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="running-software-in-a-container-from-outside">Running software in a container from OUTSIDE</h2>
+                <h2 id="running-software-in-a-container">Running software in a container</h2>
+<p>This command will make a container from the image (<code>.sif</code> file), run the software, and then colapse the container. The output from the software will be save in your current directory.</p>
 <p><code>singularity exec CONTAINER.sif YOUR_SCRIPT_HERE</code></p>
+<p>The first part of the command <code>singularity exec CONTAINER.sif</code> specifies information about the container; the second part of the command (<code>YOUR_SCRIPT_HERE</code>) relates to the command you want the software inside the container to execute.</p>
 <p>Substitute:</p>
 <ul>
 <li><code>CONTAINER.sif</code> for the name of the container you wish to use, and </li>
@@ -132,6 +134,7 @@
 <p>This command executes <code>shovill --check</code> inside a container. The container has been pulled to the local server and is named shovill_latest.sif</p>
 <p><code>singularity exec shovill_latest.sif shovill --check</code></p>
 </div>
+<hr />
               
             </div>
           </div>
