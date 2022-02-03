@@ -9,7 +9,7 @@
   <meta name="author" content="Amy J Baldwin">
   <link rel="canonical" href="https://AmyBaldwin.github.io/RunAnyTool/inside.html">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Running tools, method 2 - Run 'any' Tool</title>
+  <title>Running a Tool, method 2 - Run 'any' Tool</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Running tools, method 2";
+    var mkdocs_page_name = "Running a Tool, method 2";
     var mkdocs_page_input_path = "inside.md";
     var mkdocs_page_url = "/RunAnyTool/inside.html";
   </script>
@@ -60,9 +60,9 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="fetch.html">Setting up a new Tool</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Running tools, method 1</a>
+                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Running a Tool, method 1</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="inside.html">Running tools, method 2</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="inside.html">Running a Tool, method 2</a>
     <ul class="current">
     </ul>
                     </li>
@@ -75,7 +75,7 @@
                 <ul>
                     <li class="toctree-l1"><a class="" href="faq.md">FAQs</a>
                     </li>
-                    <li class="toctree-l1"><a class="" href="troubleshooting.md">Troubleshooting</a>
+                    <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a>
                     </li>
                 </ul>
       </div>
@@ -103,7 +103,7 @@
         
       
     
-    <li>Running tools, method 2</li>
+    <li>Running a Tool, method 2</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/AmyBaldwin/RunAnyTool/edit/master/docs/inside.md"
@@ -119,18 +119,20 @@
             <div class="section">
               
                 <h2 id="working-inside-a-container">Working inside a container</h2>
-<p>You can start a shell in your container, using the singularity shell command, like so</p>
+<p>Rather than submitting commands from outside the container, alternatively you can work inside a container. You can start a shell in your container, using the singularity shell command, like so</p>
 <pre><code>singularity shell lolcow_latest.sif
 </code></pre>
 <p>Try running</p>
 <pre><code>ls
 </code></pre>
 <p>By default, Singularity bind mounts the $HOME, /tmp, and $PWD directories within the container at runtime. </p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Your entire HOME directory is bound to Singularity container</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><ul>
+<li>Your entire HOME directory is bound to Singularity container</li></p>
+<p><li>To exit the container shell use the <code>exit</code> command.</li>
+<ul></p>
 </div>
-<p>To exit the container shell use the <code>exit</code> command.</p>
 <hr />
               
             </div>
@@ -142,7 +144,7 @@
         <a href="clear.html" class="btn btn-neutral float-right" title="Removing old Tools">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="outside.html" class="btn btn-neutral" title="Running tools, method 1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="outside.html" class="btn btn-neutral" title="Running a Tool, method 1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="None">
+  
   <meta name="author" content="Amy J Baldwin">
-  <link rel="canonical" href="https://AmyBaldwin.github.io/RunAnyTool/index.html">
+  <link rel="canonical" href="https://AmyBaldwin.github.io/RunAnyTool/troubleshooting.html">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Run 'any' Tool</title>
+  <title>Troubleshooting - Run 'any' Tool</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -18,9 +18,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Introduction";
-    var mkdocs_page_input_path = "index.md";
-    var mkdocs_page_url = "/RunAnyTool/index.html";
+    var mkdocs_page_name = "Troubleshooting";
+    var mkdocs_page_input_path = "troubleshooting.md";
+    var mkdocs_page_url = "/RunAnyTool/troubleshooting.html";
   </script>
   
   <script src="js/jquery-2.1.1.min.js" defer></script>
@@ -46,10 +46,8 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Introduction</a>
-    <ul class="current">
-    </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
                     </li>
                 </ul>
                 <ul>
@@ -72,10 +70,12 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Further Information</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="" href="faq.md">FAQs</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="troubleshooting.html">Troubleshooting</a>
+    <ul class="current">
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -98,11 +98,15 @@
     <li><a href="index.html">Docs</a> &raquo;</li>
     
       
+        
+          <li>Further Information &raquo;</li>
+        
+      
     
-    <li>Introduction</li>
+    <li>Troubleshooting</li>
     <li class="wy-breadcrumbs-aside">
       
-        <a href="https://github.com/AmyBaldwin/RunAnyTool/edit/master/docs/index.md"
+        <a href="https://github.com/AmyBaldwin/RunAnyTool/edit/master/docs/troubleshooting.md"
           class="icon icon-github"> Edit on GitHub</a>
       
     </li>
@@ -114,19 +118,20 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="how-to-run-any-tool">How to run 'any' Tool</h1>
-<p>This guide describes the quick and easy set up almost any software tool on your server. The tools can easily be removed once analysis is finished to use space efficiently. Set up does not require installing separate dependencies and can be completed in a matter of minutes.</p>
-<p>To do this we use Containers. Containers are portable and reproducible; they allow the packaging of software and their associated environments (OS, libraries, tools, etc.) within an encapsulated file that can be executed on diverse systems without the need to explicitly port or integrate with the OS, libraries, or environment specific to the host system.</p>
-<p>Container repositories such as <a href="https://cloud.sylabs.io/library">Sylabs.io Container Library</a>, <a href="https://hub.docker.com/search?q=&amp;type=image">Docker Hub</a>, <a href="https://singularityhub.github.io/singularityhub-docs/">Singularity Hub</a> and <a href="https://github.com/">GitHub</a> provide thousands of pre-built Container Images.</p>
-<p>This guide tells you how to:</p>
+                <h2 id="troubleshooting">Troubleshooting</h2>
+<p>These are some common remedies:</p>
 <ul>
-<li>set up a container on your server, </li>
-<li>run the software tool(s) inside that container and </li>
-<li>remove containers that are no longer required.</li>
+<li>It is (usually) safer to copy and paste commands </li>
+<li>To avoid spellling error use the ‘tab’ key to auto-complete </li>
+<li>Do the hyphens or inverted commas need to be re-typed? </li>
+<li>Are the spaces in the correct place? </li>
+<li>Is the command prompt in the correct directory (folder)? </li>
+<li>Is the login connection still active </li>
+<li>Is the input file named correctly? </li>
+<li>Never use {} or [] in file names. </li>
 </ul>
 
-<p>For additional information visit this <a href="https://epcced.github.io/2020-12-08-Containers-Online/10-singularity-containers/index.html">Software Carpentry</a> site.</p>
-<hr />
+<p>If these fail, ask for help.</p>
               
             </div>
           </div>
@@ -134,8 +139,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="quick.html" class="btn btn-neutral float-right" title="Quick start">Next <span class="icon icon-circle-arrow-right"></span></a>
       
+        <a href="clear.html" class="btn btn-neutral" title="Removing old Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -165,8 +170,8 @@
         </span>
     
     
+      <span><a href="clear.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
-      <span><a href="quick.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -182,8 +187,3 @@
 
 </body>
 </html>
-
-<!--
-MkDocs version : 1.2.3
-Build Date UTC : 2022-02-03 16:14:35.450535+00:00
--->
