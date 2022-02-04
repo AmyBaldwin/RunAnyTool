@@ -9,7 +9,7 @@
   <meta name="author" content="Amy J Baldwin">
   <link rel="canonical" href="https://AmyBaldwin.github.io/RunAnyTool/outside.html">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Running a Tool, method 1 - Run 'any' Tool</title>
+  <title>Method 1 - Run 'any' Tool</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Running a Tool, method 1";
+    var mkdocs_page_name = "Method 1";
     var mkdocs_page_input_path = "outside.md";
     var mkdocs_page_url = "/RunAnyTool/outside.html";
   </script>
@@ -54,27 +54,28 @@
                     <li class="toctree-l1"><a class="reference internal" href="quick.html">Quick start</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Running a Tool</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="access.html">Accessing the server</a>
                     </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="fetch.html">Setting up a new Tool</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="outside.html">Running a Tool, method 1</a>
+                </ul>
+                <p class="caption"><span class="caption-text">Running a Tool</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="outside.html">Method 1</a>
     <ul class="current">
     </ul>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Running a Tool, method 2</a>
+                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Method 2</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="clear.html">Removing old Tools</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Further Information</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="" href="faq.md">FAQs</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a>
                     </li>
                 </ul>
@@ -103,7 +104,7 @@
         
       
     
-    <li>Running a Tool, method 1</li>
+    <li>Method 1</li>
     <li class="wy-breadcrumbs-aside">
       
         <a href="https://github.com/AmyBaldwin/RunAnyTool/edit/master/docs/outside.md"
@@ -119,21 +120,27 @@
             <div class="section">
               
                 <h2 id="running-software-in-a-container">Running software in a container</h2>
-<p>This command will make a container from the image (<code>.sif</code> file), run the software, and then colapse the container. The output from the software will be save in your current directory.</p>
+<p>Once you have transferred a container image to your system you can use the enclosed software.</p>
+<p>The following command will make a container from the image file (<code>.sif</code>), run the software, and then collapse the container. The output from the software will be save in your current directory, unless specified otherwise.</p>
 <pre><code>singularity exec CONTAINER_NAME.sif YOUR_SCRIPT_HERE
 </code></pre>
-<p>The first part of the command <code>singularity exec CONTAINER.sif</code> specifies information about the container; the second part of the command (<code>YOUR_SCRIPT_HERE</code>) relates to the command you want the software inside the container to execute.</p>
+<p>The first part of the command <code>singularity exec CONTAINER_NAME.sif</code> specifies information about the container; the second part of the command (<code>YOUR_SCRIPT_HERE</code>) relates to the command you want the software inside the container to execute.</p>
 <p>Substitute:</p>
 <ul>
 <li><code>CONTAINER_NAME</code> for the name of the container you wish to use, and </li>
 <li><code>YOUR_SCRIPT_HERE</code> for the full command to execute the tool. </li>
 </ul>
 
-<p>By default, Singularity bind mounts the $HOME, /tmp, and $PWD directories within the container at runtime. </p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>This command executes <code>shovill --check</code> inside a container named <code>shovill_latest.sif</code>. The container image was already present on the local system.</p>
+<p>This exec command allows you to execute a custom command (<code>cowsay moo</code>) within a container by specifying the image file (<code>lolcow_latest.sif</code>):</p>
+<p><code>singularity exec lolcow_latest.sif cowsay moo</code></p>
+<p>The following command executes <code>shovill --check</code> inside a container named <code>shovill_latest.sif</code>. </p>
 <p><code>singularity exec shovill_latest.sif shovill --check</code></p>
+</div>
+<div class="admonition information">
+<p class="admonition-title">Information</p>
+<p>By default, Singularity automatically connects folders outside and inside the container; this means you can easily process data saved on your system and save the results. Your outputs are not lost when the container is collapsed. </p>
 </div>
 <hr />
               
@@ -143,7 +150,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="inside.html" class="btn btn-neutral float-right" title="Running a Tool, method 2">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="inside.html" class="btn btn-neutral float-right" title="Method 2">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="fetch.html" class="btn btn-neutral" title="Setting up a new Tool"><span class="icon icon-circle-arrow-left"></span> Previous</a>

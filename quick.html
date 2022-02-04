@@ -56,25 +56,26 @@
     </ul>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Running a Tool</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="access.html">Accessing the server</a>
                     </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="fetch.html">Setting up a new Tool</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Running a Tool, method 1</a>
+                </ul>
+                <p class="caption"><span class="caption-text">Running a Tool</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Method 1</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Running a Tool, method 2</a>
+                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Method 2</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="clear.html">Removing old Tools</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Further Information</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="" href="faq.md">FAQs</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a>
                     </li>
                 </ul>
@@ -115,21 +116,21 @@
             <div class="section">
               
                 <h2 id="quick-start">Quick Start</h2>
-<p>Container Images can be found: <a href="https://biocontainers-edu.readthedocs.io/en/latest/index.html">Biocontainers</a>, <a href="https://hub.docker.com/u/staphb">StaphB</a>, <a href="https://cloud.sylabs.io/library">Sylabs.io Container Library</a>, <a href="https://hub.docker.com/search?q=&amp;type=image">Docker Hub</a>, <a href="https://singularityhub.github.io/singularityhub-docs/">Singularity Hub</a> and <a href="https://github.com/">GitHub</a>.</p>
-<p>To pull a container use:</p>
+<p>Container Images can be found at <a href="https://biocontainers-edu.readthedocs.io/en/latest/index.html">Biocontainers</a>, <a href="https://hub.docker.com/u/staphb">StaphB</a>, <a href="https://cloud.sylabs.io/library">Sylabs.io Container Library</a>, <a href="https://hub.docker.com/search?q=&amp;type=image">Docker Hub</a>, <a href="https://singularityhub.github.io/singularityhub-docs/">Singularity Hub</a> and <a href="https://github.com/">GitHub</a>.</p>
+<p>To transfer a container image to your system use:</p>
 <pre><code>singularity pull SOURCE://PATH:TAG
 </code></pre>
 <hr />
-<p>To run a container use:</p>
+<p>To build a container, run a software script and collapse the container use:</p>
 <pre><code>singularity exec CONTAINER_NAME.sif YOUR_SCRIPT_HERE
 </code></pre>
-<p>or:</p>
+<p>To build and enter a container it use:</p>
 <pre><code>singularity shell CONTAINER_NAME.sif
 </code></pre>
 <p>Once inside software commands can be run directly. Use <code>exit</code>.</p>
 <hr />
 <p>To remove container images:</p>
-<pre><code>singularity cache clean
+<pre><code>rm CONTAINER_NAME.sif
 </code></pre>
 <hr />
               

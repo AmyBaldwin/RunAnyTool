@@ -54,15 +54,19 @@
                     <li class="toctree-l1"><a class="reference internal" href="quick.html">Quick start</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Running a Tool</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="access.html">Accessing the server</a>
                     </li>
+                </ul>
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="fetch.html">Setting up a new Tool</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Running a Tool, method 1</a>
+                </ul>
+                <p class="caption"><span class="caption-text">Running a Tool</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="outside.html">Method 1</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Running a Tool, method 2</a>
+                    <li class="toctree-l1"><a class="reference internal" href="inside.html">Method 2</a>
                     </li>
                 </ul>
                 <ul class="current">
@@ -71,10 +75,7 @@
     </ul>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Further Information</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="" href="faq.md">FAQs</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a>
                     </li>
                 </ul>
@@ -115,14 +116,19 @@
             <div class="section">
               
                 <h2 id="removing-container-images">Removing Container Images</h2>
-<p>The Singularity container images can be listed by:</p>
-<pre><code>singularity cache list -v
+<p>To maintain your system it is good practice remove container images that are no longer needed. For example, the lolcow container image (<code>lolcow_latest.sif</code>) occupies 84 Mb of system space. </p>
+<p>To delete an image use:</p>
+<pre><code>rm CONTAINER_NAME.sif
 </code></pre>
-<p>To remove Singularity container images use: </p>
+<p>If needed in the future it can easier be pulled again. </p>
+<hr />
+<p>You can also clean your system cache (<code>~/.singularity/cache/</code>) using:</p>
 <pre><code>singularity cache clean
 </code></pre>
+<p>To list Singularity container images use:</p>
+<pre><code>singularity cache list -v
+</code></pre>
 <hr />
-<p>The Singularity containers used by Nextflow are stored:</p>
               
             </div>
           </div>
@@ -133,7 +139,7 @@
         <a href="troubleshooting.html" class="btn btn-neutral float-right" title="Troubleshooting">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="inside.html" class="btn btn-neutral" title="Running a Tool, method 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="inside.html" class="btn btn-neutral" title="Method 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
